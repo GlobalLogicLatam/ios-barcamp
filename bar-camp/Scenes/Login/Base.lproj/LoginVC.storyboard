@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8EL-eH-jvl">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="HPS-j1-2vW">
+            <objects>
+                <viewController id="8EL-eH-jvl" customClass="LoginVC" customModule="BarCamp_MDQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dmp-BK-Qjr"/>
+                        <viewControllerLayoutGuide type="bottom" id="j7u-fl-kp0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dPP-Hr-PZ6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hff-ZG-Wp5">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzg-DR-F1O">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barcamp_red" translatesAutoresizingMaskIntoConstraints="NO" id="HMV-X8-XKd">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="245" id="MnK-EJ-nPM"/>
+                                                    <constraint firstAttribute="width" constant="227" id="g6G-gd-XgN"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiU-Zj-LyB">
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52" id="7Vg-eQ-u8T"/>
+                                                    <constraint firstAttribute="width" constant="256" id="wl0-Oc-DH6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <state key="normal" title="Sign up">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signInAction" destination="8EL-eH-jvl" eventType="touchUpInside" id="kyp-lk-GUg"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4db-wt-ZI7">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="256" id="FJw-wU-gRg"/>
+                                                    <constraint firstAttribute="height" constant="52" id="MdO-22-dCx"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="8EL-eH-jvl" id="66m-Xs-H2s"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG2-zg-SOs" customClass="FBSDKLoginButton">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52" id="imW-m8-mxK"/>
+                                                    <constraint firstAttribute="width" constant="256" id="zLK-eh-ECo"/>
+                                                </constraints>
+                                                <state key="normal" title="Sign up with Facebook"/>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_separator" translatesAutoresizingMaskIntoConstraints="NO" id="o5q-QQ-DR4">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="256" id="7Vz-OG-dV8"/>
+                                                    <constraint firstAttribute="height" constant="7" id="m1R-4E-GFq"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKF-qE-PbW">
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="HMV-X8-XKd" firstAttribute="top" secondItem="vzg-DR-F1O" secondAttribute="top" constant="40" id="2B9-Qd-8D5"/>
+                                            <constraint firstItem="HMV-X8-XKd" firstAttribute="centerX" secondItem="vzg-DR-F1O" secondAttribute="centerX" id="4Z3-f7-7n1"/>
+                                            <constraint firstAttribute="bottom" secondItem="xG2-zg-SOs" secondAttribute="bottom" constant="20" id="Az3-tY-y35">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="50"/>
+                                            </constraint>
+                                            <constraint firstItem="xG2-zg-SOs" firstAttribute="top" secondItem="o5q-QQ-DR4" secondAttribute="bottom" constant="23" id="EF6-5C-Kha"/>
+                                            <constraint firstItem="o5q-QQ-DR4" firstAttribute="centerX" secondItem="aiU-Zj-LyB" secondAttribute="centerX" id="Lnh-sB-JQU"/>
+                                            <constraint firstItem="xG2-zg-SOs" firstAttribute="centerX" secondItem="aiU-Zj-LyB" secondAttribute="centerX" id="PtS-85-Usc"/>
+                                            <constraint firstItem="o5q-QQ-DR4" firstAttribute="top" secondItem="aiU-Zj-LyB" secondAttribute="bottom" constant="23" id="Ror-J3-2II"/>
+                                            <constraint firstItem="4db-wt-ZI7" firstAttribute="leading" secondItem="XKF-qE-PbW" secondAttribute="leading" id="YNI-Fu-UQx"/>
+                                            <constraint firstItem="4db-wt-ZI7" firstAttribute="top" secondItem="XKF-qE-PbW" secondAttribute="bottom" constant="7" id="ehP-OR-RH1"/>
+                                            <constraint firstItem="4db-wt-ZI7" firstAttribute="centerX" secondItem="vzg-DR-F1O" secondAttribute="centerX" id="f0P-x0-dlJ"/>
+                                            <constraint firstItem="aiU-Zj-LyB" firstAttribute="centerX" secondItem="4db-wt-ZI7" secondAttribute="centerX" id="haT-Ze-T6i"/>
+                                            <constraint firstItem="aiU-Zj-LyB" firstAttribute="top" secondItem="4db-wt-ZI7" secondAttribute="bottom" constant="16" id="r4h-jB-Uph"/>
+                                            <constraint firstItem="4db-wt-ZI7" firstAttribute="top" secondItem="HMV-X8-XKd" secondAttribute="bottom" constant="50" id="wFE-vd-Cob"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vzg-DR-F1O" secondAttribute="trailing" id="9ZY-Fu-JGX"/>
+                                    <constraint firstItem="vzg-DR-F1O" firstAttribute="leading" secondItem="hff-ZG-Wp5" secondAttribute="leading" id="Va2-5X-wXQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="vzg-DR-F1O" secondAttribute="bottom" id="Xi0-Zw-9N4"/>
+                                    <constraint firstItem="vzg-DR-F1O" firstAttribute="width" secondItem="hff-ZG-Wp5" secondAttribute="width" id="pUT-Si-cmK"/>
+                                    <constraint firstItem="vzg-DR-F1O" firstAttribute="top" secondItem="hff-ZG-Wp5" secondAttribute="top" id="tyW-iE-JB7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hff-ZG-Wp5" firstAttribute="leading" secondItem="dPP-Hr-PZ6" secondAttribute="leading" id="Hfz-Ee-vyi"/>
+                            <constraint firstItem="hff-ZG-Wp5" firstAttribute="top" secondItem="dPP-Hr-PZ6" secondAttribute="top" id="Rri-BQ-Zqc"/>
+                            <constraint firstItem="j7u-fl-kp0" firstAttribute="top" secondItem="hff-ZG-Wp5" secondAttribute="bottom" id="ccn-7n-0bi"/>
+                            <constraint firstAttribute="trailing" secondItem="hff-ZG-Wp5" secondAttribute="trailing" id="cei-vy-8Xy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTF" destination="4db-wt-ZI7" id="8s7-YJ-Qqc"/>
+                        <outlet property="errorLB" destination="XKF-qE-PbW" id="YkB-1J-aPm"/>
+                        <outlet property="scrollView" destination="hff-ZG-Wp5" id="ecA-TO-d8E"/>
+                        <outlet property="signInBT" destination="aiU-Zj-LyB" id="Ldd-qw-cep"/>
+                        <outlet property="signInFacebookBT" destination="xG2-zg-SOs" id="VbQ-kT-GCm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXT-lU-UFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-337" y="169"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="barcamp_red" width="227" height="244"/>
+        <image name="ic_separator" width="291" height="8"/>
+    </resources>
+</document>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pkm-bj-iQP">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="4WC-yL-lpD">
+            <objects>
+                <navigationController id="ArH-CL-7RM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QCO-Dt-IOr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Pkm-bj-iQP" kind="relationship" relationship="rootViewController" id="OEZ-QM-MFa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ugl-c7-Yww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1231" y="132"/>
+        </scene>
+        <!--BarCamp MDQ-->
+        <scene sceneID="Xlu-cK-L6a">
+            <objects>
+                <viewController title="BarCamp MDQ" id="Pkm-bj-iQP" customClass="TalkTimesVC" customModule="BarCamp_MDQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3HH-TJ-aca"/>
+                        <viewControllerLayoutGuide type="bottom" id="hBA-Tx-JcT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qHf-qo-KCL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Eyw-Vh-MH5">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="timeCell" rowHeight="69" id="Glb-ho-tPT" customClass="TimeCell" customModule="BarCamp_MDQ" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Glb-ho-tPT" id="Fm5-RZ-yMx">
+                                            <frame key="frameInset" width="375" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00 hs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHK-qM-kc3">
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 charlas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzB-mg-d4h">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="76" id="YuL-L8-0np"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_clock@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="neq-1V-0MZ">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="15" id="Kzx-rt-94p"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_right_arrow@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="FPr-bL-uBW">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="9" id="qnH-Qc-MK4"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VbY-uf-Acr">
+                                                    <frame key="frameInset" height="0.5" maxX="0.5" maxY="0.5"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FPr-bL-uBW" firstAttribute="top" secondItem="Fm5-RZ-yMx" secondAttribute="topMargin" constant="8" id="855-FF-a8b"/>
+                                                <constraint firstItem="cHK-qM-kc3" firstAttribute="leading" secondItem="neq-1V-0MZ" secondAttribute="trailing" constant="22" id="97h-EL-cQb"/>
+                                                <constraint firstItem="neq-1V-0MZ" firstAttribute="leading" secondItem="Fm5-RZ-yMx" secondAttribute="leadingMargin" constant="26" id="B3g-bh-CpP"/>
+                                                <constraint firstItem="neq-1V-0MZ" firstAttribute="top" secondItem="Fm5-RZ-yMx" secondAttribute="topMargin" constant="11" id="DnK-w2-CGZ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="FPr-bL-uBW" secondAttribute="trailing" constant="26" id="FW2-pr-0cF"/>
+                                                <constraint firstItem="FPr-bL-uBW" firstAttribute="centerY" secondItem="neq-1V-0MZ" secondAttribute="centerY" id="OqY-pF-hhb"/>
+                                                <constraint firstItem="IzB-mg-d4h" firstAttribute="leading" secondItem="cHK-qM-kc3" secondAttribute="trailing" constant="22" id="Os8-Ty-Ny2"/>
+                                                <constraint firstItem="IzB-mg-d4h" firstAttribute="centerY" secondItem="Fm5-RZ-yMx" secondAttribute="centerY" id="UPD-4G-utC"/>
+                                                <constraint firstItem="FPr-bL-uBW" firstAttribute="centerY" secondItem="Fm5-RZ-yMx" secondAttribute="centerY" id="g1R-jo-74T"/>
+                                                <constraint firstItem="cHK-qM-kc3" firstAttribute="centerY" secondItem="Fm5-RZ-yMx" secondAttribute="centerY" id="gd9-U4-XHX"/>
+                                                <constraint firstItem="neq-1V-0MZ" firstAttribute="centerY" secondItem="Fm5-RZ-yMx" secondAttribute="centerY" id="hrD-3b-PzQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="TalksLB" destination="IzB-mg-d4h" id="8n8-GL-wF6"/>
+                                            <outlet property="arrowImage" destination="FPr-bL-uBW" id="eQE-cq-O4N"/>
+                                            <outlet property="clockImage" destination="neq-1V-0MZ" id="fSi-nE-F24"/>
+                                            <outlet property="timeLB" destination="cHK-qM-kc3" id="1gu-Te-Rnm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyContentCell" rowHeight="521" id="dY7-xW-rqC" customClass="EmptyContentCell" customModule="BarCamp_MDQ" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="161" width="375" height="521"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dY7-xW-rqC" id="VBM-jw-kUH">
+                                            <frame key="frameInset" width="375" height="521"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_barcamp_empty" translatesAutoresizingMaskIntoConstraints="NO" id="RS5-jT-53t">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="169" id="psu-kf-RZe"/>
+                                                        <constraint firstAttribute="width" constant="213" id="ugK-BG-zkd"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ese mismo día se habilita el tablero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahA-MD-Jdl">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Te esperamos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtl-sh-QVW">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empezamos el 22 de octubre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG3-qF-1yz">
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RS5-jT-53t" firstAttribute="centerX" secondItem="VBM-jw-kUH" secondAttribute="centerX" id="8v0-7l-l7x"/>
+                                                <constraint firstItem="ahA-MD-Jdl" firstAttribute="top" secondItem="nG3-qF-1yz" secondAttribute="bottom" constant="15" id="VaM-ex-5yB"/>
+                                                <constraint firstItem="Qtl-sh-QVW" firstAttribute="centerX" secondItem="VBM-jw-kUH" secondAttribute="centerX" id="YyW-xC-Upr"/>
+                                                <constraint firstItem="RS5-jT-53t" firstAttribute="top" secondItem="VBM-jw-kUH" secondAttribute="top" constant="92" id="mGK-hq-XAg"/>
+                                                <constraint firstItem="Qtl-sh-QVW" firstAttribute="top" secondItem="ahA-MD-Jdl" secondAttribute="bottom" id="pap-sy-cDH"/>
+                                                <constraint firstItem="nG3-qF-1yz" firstAttribute="centerX" secondItem="VBM-jw-kUH" secondAttribute="centerX" id="qpE-es-HcX"/>
+                                                <constraint firstItem="ahA-MD-Jdl" firstAttribute="centerX" secondItem="VBM-jw-kUH" secondAttribute="centerX" id="so6-u3-xNe"/>
+                                                <constraint firstItem="nG3-qF-1yz" firstAttribute="top" secondItem="RS5-jT-53t" secondAttribute="bottom" constant="35" id="zOh-hh-C6p"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="subTitleLB" destination="ahA-MD-Jdl" id="BnC-el-Kns"/>
+                                            <outlet property="textLB" destination="Qtl-sh-QVW" id="dTc-mD-x6l"/>
+                                            <outlet property="titleLB" destination="nG3-qF-1yz" id="UxF-Ed-Kgh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Pkm-bj-iQP" id="iil-S3-SPA"/>
+                                    <outlet property="delegate" destination="Pkm-bj-iQP" id="2lz-1I-C2w"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Eyw-Vh-MH5" firstAttribute="leading" secondItem="qHf-qo-KCL" secondAttribute="leading" id="78R-zN-J9o"/>
+                            <constraint firstAttribute="trailing" secondItem="Eyw-Vh-MH5" secondAttribute="trailing" id="JoT-q7-FW5"/>
+                            <constraint firstItem="hBA-Tx-JcT" firstAttribute="top" secondItem="Eyw-Vh-MH5" secondAttribute="bottom" id="aWZ-iA-4uG"/>
+                            <constraint firstItem="Eyw-Vh-MH5" firstAttribute="top" secondItem="3HH-TJ-aca" secondAttribute="bottom" id="deM-YJ-GXE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="BarCamp MDQ" id="gn9-1x-lAi">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="lfn-98-nwo"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Eyw-Vh-MH5" id="GYe-MX-Mg0"/>
+                    </connections>
+                </viewController>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="521" id="cgE-k8-MzN" customClass="EmptyContentCell" customModule="BarCamp_MDQ" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="521"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cgE-k8-MzN" id="QoT-za-pKn">
+                        <frame key="frameInset" width="375" height="520.5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barcamp_red" translatesAutoresizingMaskIntoConstraints="NO" id="9Sb-F0-pzj">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="wRA-df-klI"/>
+                                    <constraint firstAttribute="width" constant="227" id="zbb-Pd-Jf7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ese mismo día se habilita el tablero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ql9-H9-evw">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Te esperamos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1g-1c-ISS">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empezamos el 22 de octubre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6k-bg-Et9">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="a1g-1c-ISS" firstAttribute="centerX" secondItem="QoT-za-pKn" secondAttribute="centerX" id="8Gw-1V-18Y"/>
+                            <constraint firstItem="ql9-H9-evw" firstAttribute="centerX" secondItem="QoT-za-pKn" secondAttribute="centerX" id="Cig-xq-qEc"/>
+                            <constraint firstItem="V6k-bg-Et9" firstAttribute="centerX" secondItem="QoT-za-pKn" secondAttribute="centerX" id="FHt-qL-umm"/>
+                            <constraint firstItem="9Sb-F0-pzj" firstAttribute="centerX" secondItem="QoT-za-pKn" secondAttribute="centerX" id="IU5-XB-6Kq"/>
+                            <constraint firstItem="V6k-bg-Et9" firstAttribute="top" secondItem="9Sb-F0-pzj" secondAttribute="bottom" constant="35" id="Khz-Y9-ZcO"/>
+                            <constraint firstItem="9Sb-F0-pzj" firstAttribute="top" secondItem="QoT-za-pKn" secondAttribute="top" constant="92" id="SMJ-nP-a4g"/>
+                            <constraint firstItem="a1g-1c-ISS" firstAttribute="top" secondItem="ql9-H9-evw" secondAttribute="bottom" id="wjr-K8-FXA"/>
+                            <constraint firstItem="ql9-H9-evw" firstAttribute="top" secondItem="V6k-bg-Et9" secondAttribute="bottom" constant="15" id="xp4-sf-nAN"/>
+                        </constraints>
+                    </tableViewCellContentView>
+                    <connections>
+                        <outlet property="subTitleLB" destination="ql9-H9-evw" id="8Pz-uo-IQx"/>
+                        <outlet property="textLB" destination="a1g-1c-ISS" id="qSc-LF-fuq"/>
+                        <outlet property="titleLB" destination="V6k-bg-Et9" id="j8t-ZK-mIi"/>
+                    </connections>
+                </tableViewCell>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9YM-He-70c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-433" y="142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="barcamp_red" width="227" height="244"/>
+        <image name="ic_barcamp_empty" width="208" height="165"/>
+        <image name="ic_clock@3x.png" width="14" height="14"/>
+        <image name="ic_right_arrow@3x.png" width="9" height="16"/>
+    </resources>
+</document>

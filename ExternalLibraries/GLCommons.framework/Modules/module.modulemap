@@ -1,0 +1,10 @@
+framework module GLCommons {
+  umbrella header "GLCommons-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module GLCommons.Swift {
+    header "GLCommons-Swift.h"
+}

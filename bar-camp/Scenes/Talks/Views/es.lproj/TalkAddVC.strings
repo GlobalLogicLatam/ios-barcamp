@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "HPZ-E5-SpK"; */
+"HPZ-E5-SpK.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "mZG-i8-VGV"; */
+"mZG-i8-VGV.text" = "Label";
+
+/* Class = "UILabel"; text = "o"; ObjectID = "ugM-ow-SgH"; */
+"ugM-ow-SgH.text" = "o";
+
+/* Class = "UILabel"; text = "Cargar foto (opcional)"; ObjectID = "wds-FN-eIG"; */
+"wds-FN-eIG.text" = "Cargar foto (opcional)";

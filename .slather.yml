@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+workspace: bar-camp.xcworkspace
+xcodeproj: bar-camp.xcodeproj
+scheme: bar-camp
+source_directory: bar-camp/
+output_directory: build/xml_report
